@@ -210,3 +210,11 @@ def state_wise_vaccination_plot(state: str) -> None:
     state_doses = df[df['State'] == state][['State','Total Doses Administered', 'month']]
     sns.barplot('month', 'Total Doses Administered', data = state_doses)
     plt.legend(bbox_to_anchor=(1, 0), loc='lower left', ncol=1)
+
+    
+def human_format(num, round_to=2):
+    magnitude = 0
+    while abs(num) >= 1000:
+        magnitude += 1
+        num = round(num / 1000.0, round_to)
+    return '{:.{}f}{}'.format(num, round_to, ['', 'K', 'M', 'G', 'T', 'P'][magnitude])
