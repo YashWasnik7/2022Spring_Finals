@@ -200,3 +200,13 @@ def vaccine_gender_plot(df: pd.DataFrame) -> None:
     plt.title(plot_title)
     plt.xlabel('month-year')
     plt.ylabel('no. of individuals')
+    
+    
+def state_wise_vaccination_plot(state):
+    """
+    Plots a bar graph displaying the monthly vaccination of a state
+    :param state: name of the state
+    """
+    state_doses = df[df['State'] == state][['State','Total Doses Administered', 'month']]
+    sns.barplot('month', 'Total Doses Administered', data = state_doses)
+    plt.legend(bbox_to_anchor=(1, 0), loc='lower left', ncol=1)
