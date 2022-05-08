@@ -5,10 +5,14 @@ Team members:
 2. Himani Mehta
 3. Yash Wasnik
 
+Link to original data analyis: https://www.kaggle.com/code/jaykumar1607/covid-vaccine-hesitancy-usa-plotly-mapbox
+
+We have tried to take the original analysis further to analyze vaccine hesitancy in multi-party governed countries like India.
+
 Hypothesis 1: In multi-party governed countries, states with the same ruling party as the central will have higher vaccinated population.
 Hypothesis 2: People in rural regions are more hesitant towards taking the vaccine.
 
------ add analysis and results here -----
+----- add analysis here -----
 
 Our project notebooks are divided into three - one for original analysis improvement, and the rest for hypotheses 1 and 2.
 Instructions on running the code: 
