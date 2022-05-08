@@ -202,7 +202,7 @@ def vaccine_gender_plot(df: pd.DataFrame) -> None:
     plt.ylabel('no. of individuals')
     
     
-def state_wise_vaccination_plot(state):
+def state_wise_vaccination_plot(state: str) -> None:
     """
     Plots a bar graph displaying the monthly vaccination of a state
     :param state: name of the state
